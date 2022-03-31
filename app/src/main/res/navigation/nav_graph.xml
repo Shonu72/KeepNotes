@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragement">
+
+    <fragment
+        android:id="@+id/homeFragement"
+        android:name="com.coolblogger.tech.keepnotes.UI.Fragement.HomeFragement"
+        android:label="Keep Notes"
+        tools:layout="@layout/fragment_home_fragement" >
+        <action
+            android:id="@+id/action_homeFragement_to_createNote"
+            app:destination="@id/createNote" />
+        <action
+            android:id="@+id/action_homeFragement_to_editNote"
+            app:destination="@id/editNote" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNote"
+        android:name="com.coolblogger.tech.keepnotes.UI.Fragement.CreateNote"
+        android:label="Create notes"
+        tools:layout="@layout/fragment_create_note" >
+        <action
+            android:id="@+id/action_createNote_to_homeFragement"
+            app:destination="@id/homeFragement" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNote"
+        android:name="com.coolblogger.tech.keepnotes.UI.Fragement.EditNote"
+        android:label="Edit notes"
+        tools:layout="@layout/fragment_edit_note" >
+        <action
+            android:id="@+id/action_editNote_to_homeFragement"
+            app:destination="@id/homeFragement" />
+        <argument
+            android:name="data"
+            app:argType="com.coolblogger.tech.keepnotes.Models.notes" />
+    </fragment>
+</navigation>
