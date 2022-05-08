@@ -3,7 +3,7 @@ This app is build under MVVM architechture using Kotlin language in Android Stud
 
 
 
-<p align="center">
+<p align="left">
   <img src="https://user-images.githubusercontent.com/67668844/166629837-3a3d9b8a-f71b-462e-b235-566e1591313c.jpg"  width="200" height="400" />
   &nbsp 
   <img src="https://user-images.githubusercontent.com/67668844/166629841-a13f9e7b-2d43-4da8-b791-ac8d48e1acd3.jpg"   width="200" height="400" />
